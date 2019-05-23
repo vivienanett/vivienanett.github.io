@@ -1,0 +1,49 @@
+<h1>Kérdőív</h1>
+<br><p><sup>★</sup><span class="italic"> mező kitöltése kötelező</span></p><br>
+<form method="get">
+
+  <label for="name">Név<sup>★</sup></label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email cím<sup>★</sup></label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="age">Életkor<sup>★</sup></label>
+  <input type="number" id="age" name="age" min="0" required><br>
+
+  <p>Szokott táncolni?<sup>★</sup></p>
+  <input type="radio" id="yes" name="active" value="yes" required>
+  <label for="yes">Igen</label>
+  <input type="radio" id="no" name="active" value="no" required>
+  <label for="no">Nem</label><br><br>
+
+  <label for="like">Mennyire szeret táncolni?<sup>★</sup></label><br>
+  <input type="range" id="like" name="like" required step="1" min="0" max="10"><br>
+
+  <label for="type">Melyik a kedvence a bemutatott társastáncok közül?<sup>★</sup></label>
+  <select id="type" name="type">
+    <option>Angol keringő</option>
+    <option>Bécsi keringő</option>
+    <option>Tangó</option>
+    <option>Foxtrott</option>
+    <option>Quickstep</option>
+    <option>Szamba</option>
+    <option>Rumba</option>
+    <option>Cha-cha-cha</option>
+    <option>Paso doble</option>
+    <option>Jive</option>
+    <option>West Coast Swing</option>
+    <option>Salsa</option>
+    <option>Bachata</option>
+    <option>Merengue</option>
+    <option>Mambó</option>
+  </select><br><br>
+
+  <label for="comment">Megjegyzés</label><br>
+  <textarea id="comment" name="comment" cols="59" rows="10"></textarea><br>
+
+  <input type="checkbox" id="consent" name="consent" required>
+  <label for="consent"><sup>★</sup> Hozzájárulok, hogy az általam megadott adatokat az oldal készítője név nélkül, statisztikai célokra felhasználja.</label><br><br>
+
+  <input type="submit">
+</form>
